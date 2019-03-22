@@ -1,0 +1,14 @@
+{
+  "name": "websocket",
+  "version": "1.0.0",
+  "description": "simple demonstration on how native websockets works",
+  "main": "WsServer.js",
+  "scripts": {
+    "start": "nodemon WsServer.js"
+  },
+  "author": "Ashutosh",
+  "license": "ISC",
+  "dependencies": {
+    "ws": "^6.2.0"
+  }
+}
