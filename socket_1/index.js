@@ -14,4 +14,9 @@ io.on("connection", socket => {
   socket.on("dataToServer", dataFromClient => {
     console.log(dataFromClient);
   });
+
+  socket.on("newMessageToServer", newMessageFromClient => {
+    //console.log(newMessageFromClient);
+    io.emit("messageToClients", { text: newMessageFromClient.text });
+  });
 });
